@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>My travel places</label>
+    <select id="place" onchange="myplace()">
+        <option>select place</option>
+     <option>Hydrabad</option>
+     <option>Vizag</option>
+     <option>Goa</option>
+     <option>Banglore</option>
+    </select>
+    <label id="result"></label>
+    <script>
+        function myplace(){
+            var myplace=document.getElementById("place").value
+            document.getElementById("result").innerHTML="you are selected " + myplace
+
+        }
+    </script>
+</body>
+</html>
